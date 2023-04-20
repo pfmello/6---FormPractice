@@ -17,66 +17,97 @@
     </header>
 
     <main>
-      <form action="#">
-        <h2>How can we help you ?</h2>
-        <label for="user-name">Your Name</label>
-        <input type="text" name="user-name" id="user-name" required />
-
-        <label for="user-email">Your E-mail Address</label>
-        <input type="email" name="user-email" id="user-email" required />
-
-        <label for="user-phone">Your Phone</label>
-        <input type="tel" name="user-phone" id="user-phone" required />
-
-        <label for="user-message">Your Message</label>
-        <textarea
-          name="user-message"
-          id="user-message"
-          cols="30"
-          rows="10"></textarea>
-
-        <label for="user-finded">How did you find us ?</label>
-        <select name="user-finded" id="user-finded">
-          <option value="search">Web Search</option>
-          <option value="youtube">Youtube</option>
-          <option value="ads">Ads</option>
-        </select>
-
-        <h2>How should we reply ?</h2>
-
+      <form action="#" method="GET">
         <section>
-          <div class="flex-radio">
-            <input
-              type="radio"
-              name="user-reply"
-              id="user-reply-phone"
-              value="phone" />
-            <label for="user-reply-phone">Call me</label>
-          </div>
+          <h2>How can we help you ?</h2>
 
-          <div class="flex-radio">
-            <input
-              type="radio"
-              name="user-reply"
-              id="user-reply-email"
-              value="email" />
-            <label for="user-reply-email">Send me an email</label>
-          </div>
+          <ul>
+            <li>
+              <label for="user-name">Your Name</label>
+              <input
+                type="text"
+                name="user-name"
+                id="user-name"
+                placeholder="Your name..."
+                required />
+            </li>
+            <li>
+              <label for="user-email">Your E-mail Address</label>
+              <input
+                type="email"
+                name="user-email"
+                id="user-email"
+                placeholder="Your email..."
+                required />
+            </li>
+            <li>
+              <label for="user-phone">Your Phone</label>
+              <input
+                type="tel"
+                name="user-phone"
+                id="user-phone"
+                placeholder="Your telephone..."
+                required />
+            </li>
 
-          <div class="flex-radio">
-            <input
-              type="radio"
-              name="user-reply"
-              id="user-reply-noreply"
-              value="noreply" />
-            <label for="user-reply-noreply">Don't reply</label>
-          </div>
+            <li>
+              <label for="user-message">Your Message</label>
+              <textarea
+                name="user-message"
+                id="user-message"
+                cols="30"
+                rows="10"
+                required></textarea>
+            </li>
+          </ul>
         </section>
 
-        <div class="flex-radio-checkbox">
+        <section>
+          <label for="user-finded">How did you find us ?</label>
+          <select name="user-finded" id="user-finded">
+            <option value="search">Web Search</option>
+            <option value="youtube">Youtube</option>
+            <option value="ads">Ads</option>
+          </select>
+        </section>
+
+        <section>
+          <h2>How should we reply ?</h2>
+
+          <ul>
+            <li class="flex-radio">
+              <input
+                type="radio"
+                name="user-reply"
+                id="user-reply-phone"
+                value="phone" />
+              <label for="user-reply-phone">Call me</label>
+            </li>
+
+            <li class="flex-radio">
+              <input
+                type="radio"
+                name="user-reply"
+                id="user-reply-email"
+                value="email" />
+              <label for="user-reply-email">Send me an email</label>
+            </li>
+
+            <li class="flex-radio">
+              <input
+                type="radio"
+                name="user-reply"
+                id="user-reply-noreply"
+                value="noreply" />
+              <label for="user-reply-noreply">Don't reply</label>
+            </li>
+          </ul>
+        </section>
+
+        <section class="flex-radio-checkbox">
           <input type="checkbox" name="accept-terms" id="accept-terms" />
           <label for="accept-terms">Accept terms ?</label>
-        </div>
+        </section>
 
         <section id="buttons">
           <button type="reset">Clear</button>

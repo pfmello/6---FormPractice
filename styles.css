@@ -1,20 +1,27 @@
 body {
-  background-color: rgb(233, 246, 242);
   font-family: "Roboto", sans-serif;
+  background-color: rgb(236, 252, 253);
 }
 
 h1 {
   text-align: center;
+  margin: 2rem;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 form {
-  padding: 1rem;
-  width: 50%;
+  width: 40rem;
   margin: auto;
-  border: 0.5px solid rgba(0, 0, 0, 0.145);
-  overflow: hidden;
-  background-color: rgb(231, 240, 244);
+  background-color: rgb(246, 250, 255);
+  padding: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
   border-radius: 6px;
+  /* overflow: hidden; */
 }
 
 label {
